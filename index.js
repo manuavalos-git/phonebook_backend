@@ -26,27 +26,27 @@ let persons=[
     }
 ]
 
-morgan.token('body', (req, res) =>{
-  if(req.method==='POST'){
-    return JSON.stringify(req.body)
-  }
-  else{
-    return null 
-  }
-})
+// morgan.token('body', (req, res) =>{
+//   if(req.method==='POST'){
+//     return JSON.stringify(req.body)
+//   }
+//   else{
+//     return null 
+//   }
+// })
 
 app.use(cors())
 app.use(express.json())
-app.use(morgan(function (tokens, req, res) {
-  return [
-    tokens.method(req, res),
-    tokens.url(req, res),
-    tokens.status(req, res),
-    tokens.res(req, res, 'content-length'), '-',
-    tokens['response-time'](req, res), 'ms',
-    tokens.body(req, res)
-  ].join(' ')
-}))
+// app.use(morgan(function (tokens, req, res) {
+//   return [
+//     tokens.method(req, res),
+//     tokens.url(req, res),
+//     tokens.status(req, res),
+//     tokens.res(req, res, 'content-length'), '-',
+//     tokens['response-time'](req, res), 'ms',
+//     tokens.body(req, res)
+//   ].join(' ')
+// }))
 
 const generateId = () => {
 //   const maxId = notes.length > 0
