@@ -1,6 +1,6 @@
 DELETE  http://localhost:3001/api/persons/1
 ###
-GET http://localhost:3001/api/persons
+GET https://phonebook-backend-sigma.vercel.app/api/persons
 ###
 GET http://localhost:3001/api/persons/12
 ###
