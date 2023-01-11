@@ -62,6 +62,12 @@ const checkName = (name) => {
     return !ckeck
 }
 
+app.get('/api', (request, response) => {
+  let total=0
+  const totalPersons=persons.reduce(()=>total=total+1,0)
+  response.send(`<h3>Phonebook has info for ${totalPersons} peoples</h3><h3>${new Date()}</h3>`)
+})
+
 app.get('/api/info', (request, response) => {
     let total=0
     const totalPersons=persons.reduce(()=>total=total+1,0)
