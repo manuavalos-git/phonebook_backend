@@ -34,7 +34,7 @@ morgan.token('body', (req, res) =>{
     return null 
   }
 })
-
+app.use(express.static('build'))
 app.use(cors())
 app.use(express.json())
 app.use(morgan(function (tokens, req, res) {
@@ -121,4 +121,13 @@ app.post('/api/persons', (request, response) => {
   response.json(person)
 })
 
+app.listen(process.env.PORT||3001)
+
 module.exports=app
+
+// "builds":[
+//   {
+//       "src":"./index.js",
+//       "use":"@vercel/node"
+//   }
+// ],
