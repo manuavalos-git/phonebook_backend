@@ -1,10 +1,10 @@
-DELETE  https://phonebook-backend-manuavalos-git.vercel.app/api/persons/1
+DELETE  https://phonebookbackend-production-e5a2.up.railway.app/api/persons/1
 ###
-GET https://phonebook-backend-manuavalos-git.vercel.app/api/persons
+GET https://phonebookbackend-production-e5a2.up.railway.app/api/persons
 ###
-GET https://phonebook-backend-manuavalos-git.vercel.app/api/persons/12
+GET https://phonebookbackend-production-e5a2.up.railway.app/api/persons/12
 ###
-POST https://phonebook-backend-manuavalos-git.vercel.app/api/persons
+POST https://phonebookbackend-production-e5a2.up.railway.app/api/persons
 Content-Type: application/json
 
 {
