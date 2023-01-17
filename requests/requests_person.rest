@@ -12,11 +12,13 @@ Content-Type: application/json
     "number":"298463982"
 }
 ###
-DELETE  http://localhost:3001/api/persons/1
+DELETE  http://localhost:3001/api/persons/63c22dbdf875fe3dcc873b1d
 ###
 GET http://localhost:3001/api/persons
 ###
-GET http://localhost:3001/api/persons/12
+GET http://localhost:3001/api/info
+###
+GET http://localhost:3001/api/persons/63c22dbdf875fe3dcc873b1d
 ###
 POST http://localhost:3001/api/persons
 Content-Type: application/json
@@ -24,4 +26,11 @@ Content-Type: application/json
 {
     "name":"Manuel",
     "number":"298463982"
+}
+###
+PUT  http://localhost:3001/api/persons/63c22edd62705c601b8deba0
+Content-Type: application/json
+
+{
+    "number":"354sc1"
 }
