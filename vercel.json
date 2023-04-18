@@ -7,7 +7,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "build"
+        "dest": "/build"
       }
     ],
     "builds": [
