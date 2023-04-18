@@ -4,6 +4,22 @@
       {
         "src": "/api/.*",
         "dest": "index.js"
+      },
+      {
+        "src": "/static/.*",
+        "dest": "/build/static/$1"
+      },
+      {
+        "src": "/favicon.ico",
+        "dest": "/build/favicon.ico"
+      },
+      {
+        "src": "/manifest.json",
+        "dest": "/build/manifest.json"
+      },
+      {
+        "src": "/",
+        "dest": "/build/index.html"
       }
     ]
   }
