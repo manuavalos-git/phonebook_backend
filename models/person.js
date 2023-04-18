@@ -3,6 +3,7 @@ mongoose.set('strictQuery', true);
 const url = process.env.MONGODB_URI;
 
 console.log('connecting to', url);
+console.log('erroooor');
 
 mongoose.connect(url)
     .then((result) => {
