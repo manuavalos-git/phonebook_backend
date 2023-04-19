@@ -5,5 +5,11 @@
         "src": "/(.*)",
         "dest": "index.js"
       }
+    ],
+    "builds": [
+        {
+          "src": "package.json",
+          "use": "@vercel/node"
+        }
     ]
   }
